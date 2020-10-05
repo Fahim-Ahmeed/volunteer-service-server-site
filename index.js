@@ -80,4 +80,7 @@ client.connect(err => {
 
   })
 });
-app.listen(4000);
+app.get('/',(req, res)=>{
+  res.send('all is ok')
+})
+app.listen(process.env.PORT || 4000);
